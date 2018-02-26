@@ -10,7 +10,7 @@ public class TestStack {
             System.out.print(s.pop() + " ");
         }
         System.out.println();
-        System.out.println(s.getSize());
+//        System.out.println(s.getSize());
     }
 
 }
