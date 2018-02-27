@@ -8,5 +8,5 @@ public interface QueueADT<T> {
     int getSize();
     boolean isEmpty();
     T front() throws ExceptionQueueEmpty;  //若队列非空返回队首元素(不删除)
-    void traversal(); //遍历
+
 }
