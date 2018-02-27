@@ -54,4 +54,27 @@ public class StackArray implements StackADT{
         }
         return S[top];
     }
+    public static Integer[] reverse(Integer[] a){
+        StackArray s = new StackArray(a.length);
+        Integer[] b = new Integer[a.length];
+        for (int i = 0; i < a.length; i ++){
+            s.push(a[i]);
+        }
+        for (int i = 0; i < a.length; i ++){
+            b[i] = (Integer) s.pop();
+        }
+        return b;
+    }
+
+    public static void main(String[] args){
+        Integer[] a = new Integer[100];
+        for (int i = 0; i < a.length; i ++){
+            a[i] = i;
+        }
+        Integer[] reversed;
+        reversed = StackArray.reverse(a);
+        for (int i = 0; i < reversed.length; i ++){
+            System.out.println(reversed[i]);
+        }
+    }
 }
