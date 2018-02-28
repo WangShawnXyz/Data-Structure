@@ -71,12 +71,12 @@ public class QueueArray<T> implements QueueADT{
 
 
     public static void main(String[] args){
-        QueueArray q = new QueueArray(101);
+        QueueArray q = new QueueArray(5+1);
         for (int i = 0; i < 100; i ++){
             q.enqueue(i);
         }
         while (q.getSize()>1){
-            for (int i = 1; i < 3; i ++){
+            for (int i = 1; i <= 2; i ++){
                 q.enqueue(q.dequeue());
             }
             q.dequeue();

@@ -30,7 +30,7 @@ public class Node implements PositionADT {
     public Node getNext(){
         return this.next;
     }
-    
+
     public void setNext(Node newNext){
         this.next = newNext;
     }
