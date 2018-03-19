@@ -1,8 +1,8 @@
 package linkedList;
 
-import position.PositionADT;
+import position.Position;
 
-public class Node implements PositionADT {
+public class Node implements Position {
     private Object element;
     private Node next;
 

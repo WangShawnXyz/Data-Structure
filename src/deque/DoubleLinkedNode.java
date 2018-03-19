@@ -1,11 +1,11 @@
 package deque;
 
-import position.PositionADT;
+import position.Position;
 
-public class DoubleLinkedNode implements PositionADT{
-    private Object element;
-    private DoubleLinkedNode prev;
-    private DoubleLinkedNode next;
+public class DoubleLinkedNode implements Position{
+    protected Object element;
+    protected DoubleLinkedNode prev;
+    protected DoubleLinkedNode next;
 
     public DoubleLinkedNode(){this(null, null, null);}
     public DoubleLinkedNode(Object element){
