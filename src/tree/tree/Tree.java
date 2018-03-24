@@ -1,4 +1,4 @@
-package tree;
+package tree.tree;
 
 public interface Tree {
     public Object getElem();

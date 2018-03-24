@@ -1,4 +1,4 @@
-package tree;
+package tree.tree;
 
 public class TreeLinkedList implements Tree{
     private Object element;
