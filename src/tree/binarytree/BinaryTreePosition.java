@@ -1,6 +1,6 @@
-package tree.binarytree;
+package Tree.binarytree;
 
-import linearStructure.position.Position;
+import Linear.position.Position;
 
 import java.util.Iterator;
 

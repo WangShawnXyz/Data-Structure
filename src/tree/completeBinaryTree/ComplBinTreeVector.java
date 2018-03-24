@@ -1,9 +1,9 @@
-package tree.completeBinaryTree;
+package Tree.completeBinaryTree;
 
-import linearStructure.vector.Vector;
-import linearStructure.vector.VectorExtendableArray;
-import tree.binarytree.BTreeLinkedList;
-import tree.binarytree.BinaryTreePosition;
+import Linear.vector.Vector;
+import Linear.vector.VectorExtendableArray;
+import Tree.binarytree.BTreeLinkedList;
+import Tree.binarytree.BinaryTreePosition;
 
 public class ComplBinTreeVector extends BTreeLinkedList implements CompleteBinaryTree {
     private Vector T;

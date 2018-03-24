@@ -1,8 +1,8 @@
-package tree.completeBinaryTree;
+package Tree.completeBinaryTree;
 
-import linearStructure.vector.Vector;
-import tree.binarytree.BTNode;
-import tree.binarytree.BinaryTreePosition;
+import Linear.vector.Vector;
+import Tree.binarytree.BTNode;
+import Tree.binarytree.BinaryTreePosition;
 
 public class ComplBinTreeNodeWithRank extends BTNode implements BinaryTreePosition {
     private Vector T;//所属的树
