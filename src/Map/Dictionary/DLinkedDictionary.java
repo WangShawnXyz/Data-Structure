@@ -5,6 +5,7 @@ import Map.EqualityTester;
 import PriorityQueue.entry.Entry;
 import PriorityQueue.entry.EntryDefault;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -77,6 +78,7 @@ public class DLinkedDictionary implements Dictionary {
         }
         return null;
     }
+    HashMap
 
     @Override
     public Iterator entries() {

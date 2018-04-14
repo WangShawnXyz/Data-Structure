@@ -5,6 +5,7 @@ import Map.EqualityTester;
 import PriorityQueue.entry.Entry;
 import PriorityQueue.entry.EntryDefault;
 
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -122,4 +123,5 @@ public class HashMapDictionary implements Dictionary {
         }
         return L.iterator();
     }
+    Hashtable
 }
