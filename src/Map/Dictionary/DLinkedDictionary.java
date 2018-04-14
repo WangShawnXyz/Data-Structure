@@ -78,8 +78,6 @@ public class DLinkedDictionary implements Dictionary {
         }
         return null;
     }
-    HashMap
-
     @Override
     public Iterator entries() {
         return L.iterator();

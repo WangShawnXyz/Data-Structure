@@ -123,5 +123,4 @@ public class HashMapDictionary implements Dictionary {
         }
         return L.iterator();
     }
-    Hashtable
 }
