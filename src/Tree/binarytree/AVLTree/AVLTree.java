@@ -33,7 +33,7 @@ public class AVLTree extends BSTree implements Dictionary {
      * 从z节点开始，从上而下平衡二叉树
      */
 
-    private BinaryTreePosition rebalance(BinaryTreePosition z, BinaryTreePosition r) {
+    protected static BinaryTreePosition rebalance(BinaryTreePosition z, BinaryTreePosition r) {
         if (z == null) return r;
         while (true){   //从z开始逐级向上查找z的祖先
             if (!isBalanced(z)) rotate(z);  //如果z已经失衡了， 先旋转调整z
@@ -42,7 +42,7 @@ public class AVLTree extends BSTree implements Dictionary {
         }   //while
     }
 
-    private boolean isBalanced(BinaryTreePosition z) {
+    protected static boolean isBalanced(BinaryTreePosition z) {
         if (z == null) return true;
         int lH = (z.hasLChild()) ? z.getLChild().getHeight() : -1;
         int rH = (z.hasRChild()) ? z.getRChild().getHeight() : -1;
@@ -50,7 +50,7 @@ public class AVLTree extends BSTree implements Dictionary {
         return (-1 <= delta) && (delta <= 1);
     }
 
-    private BinaryTreePosition rotate(BinaryTreePosition z) {
+    protected static BinaryTreePosition rotate(BinaryTreePosition z) {
         // x, y, z 爷父孙三个节点
         BinaryTreePosition y = tallerChild(z);
         BinaryTreePosition x = tallerChild(y);
@@ -109,7 +109,7 @@ public class AVLTree extends BSTree implements Dictionary {
         return b;   //返回新的子树根
     }
 
-    private BinaryTreePosition tallerChild(BinaryTreePosition z) {
+    protected static BinaryTreePosition tallerChild(BinaryTreePosition z) {
         int lH = (z.hasLChild()) ? z.getLChild().getHeight() : -1;
         int rH = (z.hasRChild()) ? z.getRChild().getHeight() : -1;
 
@@ -120,7 +120,7 @@ public class AVLTree extends BSTree implements Dictionary {
         else return z.getRChild();
     }
 
-    private BinaryTreePosition shorterChild(BinaryTreePosition z) {
+    protected static BinaryTreePosition shorterChild(BinaryTreePosition z) {
         int lH = (z.hasLChild()) ? z.getLChild().getHeight() : -1;
         int rH = (z.hasRChild()) ? z.getRChild().getHeight() : -1;
 
